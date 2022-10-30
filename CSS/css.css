@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Crimson Pro', serif;
+    box-sizing:border-box
+}
+#main-header{
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+
+#logo-image{
+    height: 70px;
+    border-radius: 10px;
+    
+}
+
+#company-logo{
+     margin: 15px;
+    }
+
+#main-nav{
+    margin: 15px 25px;
+ display: flex;
+ margin: 1px;
+ justify-content: space-between;
+ 
+}
+nav{
+    display: flex;
+    margin:20px 20px;
+    justify-content: center;
+}
+#main-nav nav a:hover
+{
+  border-bottom: 1px solid #000000;
+}
+
+#main-nav nav a.active
+{
+  border-bottom: 1px solid #000000 ;
+  
+}
+
+
+#main-nav nav a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #333738;
+    margin:15px 15px ;
+    font-weight:bolder ;  
+    }
+    #main-nav nav div{
+        color: #333738;
+    margin:15px 15px ; 
+    }  
+
+    #header-content .background-color{
+        display: flex;
+        justify-content: space-around;
+        margin: 5px 5px;
+        background-color: #B4B5BE;
+    }
+
+    .slider {
+        width: 500px;
+        height: 500px;
+        background-color:  #B4B5BE;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+        text-align: center;
+        overflow: hidden;
+        margin: 15px;
+      }
+      .image-container {
+        width: 1500px;
+        background-color: #B4B5BE;
+        height: 500px;
+        clear: both;
+        position: relative;
+        -webkit-transition: left 2s;
+        -moz-transition: left 2s;
+        -o-transition: left 2s;
+        transition: left 2s;
+        border-radius: 20px;
+      }
+      .slide {
+        float: left;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+        border-radius: 20px;
+      }
+      #slide-1:target ~ .image-container {
+        left: 0px;
+      }
+      #slide-2:target ~ .image-container {
+        left: -500px;
+      }
+      #slide-3:target ~ .image-container {
+        left: -1000px;
+      }
+      .buttons {
+        position: relative;
+        top: -20px;
+      }
+      .buttons a {
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        border-radius: 50px;
+        background-color:#333738;
+      }
+
+#leftside
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px 30px;
+}
+#heading
+{
+    font-size: 30px;
+    margin:15px 15px ;
+    font-weight:bolder ;  
+    color: #333738;
+}
+
+#para
+{
+  font-size: 24px;
+  margin:0px 15px ;
+  font-weight:lighter;  
+  color: #333738;
+  word-wrap: normal;
+}
+
+#button
+{
+  font-size: 24px;
+  margin:0px 20px ;
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 10px;
+  border: 10px;
+  font-weight: bolder;
+  color: rgb(0, 0, 0);
+  background-color: #333738;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+
+/* Make the image to responsive */
+.image {
+  display: block;
+  width: 100%;
+  height: 300px;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(255, 255, 255, 0.5); /* Black see-through */
+  color: #000000;
+  width: 100%;
+  max-width: 300px;
+  transition: .5s ease;
+  opacity:0;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.container:hover .overlay {
+  opacity: 1;
+}
+
+
+h2:hover
+{
+ 
+  border-bottom: 0.1px solid black;
+  
+}
+
+#Product-container
+{
+  justify-content: space-between;
+  display: flex;
+  align-items: baseline;
+  margin: 0px 50px;
+  
+
+}
+
+footer
+{
+  background-color: #f1f1f1;
+  margin-top: 50px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  
+}
+#footer-container
+{
+  display: flex;
+  justify-content: space-between;
+}
+
+#FooterList{
+  width: 300px;
+  margin: 0px 20px;
+  font-size: large;
+  list-style: none;
+
+}
+
+ul li:first-child
+{
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+ul
+{
+  
+ 
+  list-style: none;
+ 
+}
+li
+{
+    padding: 10px 0px;
+    cursor: pointer;
+}
+
+#middle-content
+{
+  display: flex;
+  flex-direction: column;
+  margin: 20px 5px;
+  background-color:#b4b5be44;
+  padding: 20px;
+}
+
+
+form
+{
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  
+ 
+}
+
+#form
+{
+  margin: 5px 0px;
+  font-weight: bolder;
+}
+
+#form-margin
+{
+  margin: 5px 0px;
+}
+
+#customer-heading
+{
+  font-size: x-large;
+  justify-content: center;
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+
+#customer-review
+{
+  font-size: medium;
+  margin: 5px;
+}
