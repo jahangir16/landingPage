@@ -7,11 +7,12 @@
     font-family: 'Crimson Pro', serif;
     box-sizing:border-box
 }
+
 #main-header{
     background-color: whitesmoke;
     display: flex;
     justify-content: space-between;
-   
+   margin-bottom: 5px;
 }
 
 
@@ -43,7 +44,8 @@ nav{
 }
 
 #main-nav nav a.active
-{
+{ 
+  
   border-bottom: 1px solid #000000 ;
   
 }
@@ -66,6 +68,7 @@ nav{
         justify-content: space-around;
         margin: 5px 5px;
         background-color: #B4B5BE;
+        position: static;
     }
 
     .slider {
@@ -199,16 +202,32 @@ h2:hover
   border-bottom: 0.1px solid black;
   
 }
+/* Heading of the product*/
+#body-content-Center{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+margin: 15px;
 
+}
+#select{
+  font-size: 40px;
+  box-shadow: 1px solid black;
+  padding: 10px;
+}
+#select:focus{outline: none;}
+/* product */
 #Product-container
 {
   justify-content: space-between;
   display: flex;
   align-items: baseline;
   margin: 0px 50px;
-  
-
 }
+#product-Row2{ justify-content: space-between;
+  display: flex;
+  align-items: baseline;
+  margin: 0px 50px;}
 
 footer
 {
@@ -293,4 +312,101 @@ form
 {
   font-size: medium;
   margin: 5px;
+}
+
+
+/*<!--Single Product-->*/
+#productDeatail
+{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+ 
+}
+
+
+#productleftside {
+  padding: 20px;
+  
+}
+#productleftside img{
+  padding: 0px;
+}
+#small-img{
+  display: flex;
+  justify-content: space-between;
+}
+#row{
+  flex-basis: 24%;
+  cursor: pointer;
+}
+
+#productrightside h1{
+  margin: 10px 0px;
+
+}
+
+#productrightside h4{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+#productrightside select{
+  display: block;
+  padding: 10px;
+  margin-top: 10px;
+}
+#productrightside input{
+  width: 50px;
+  height: 40px;
+  margin: 10px 0px;
+  font-size: 20px;
+
+}
+#productrightside h3{
+  margin: 10px 0px;
+
+}
+
+/*Cart */
+#cartcontainer{
+  margin: 30px auto;
+  padding: 30px;
+}
+#tableid{
+  width: 100%;
+  border-collapse: collapse;
+
+}
+
+#cartinfo{
+  display: flex;
+  flex-wrap: wrap;
+}
+th{
+ text-align: left;
+padding: 5px;
+color: #000000;
+background-color: #B4B5BE;
+
+}
+td{
+  padding: 10px 5px;
+
+}
+td a
+{
+  color: #000000;
+  font-size: 15px;
+}
+td input{
+  width: 50px;
+  height: 40px;
+  margin: 10px 0px;
+  font-size: 20px;
+}
+td small
+{
+  font-size: 20px;
+  font-weight: bold;
 }
