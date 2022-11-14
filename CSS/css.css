@@ -149,6 +149,7 @@ nav{
 
 #button
 {
+  text-decoration: none;
   font-size: 24px;
   margin:0px 20px ;
   margin-top: 20px;
